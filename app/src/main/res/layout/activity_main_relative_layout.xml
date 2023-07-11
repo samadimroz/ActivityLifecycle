@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtStarkIndName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="Stark Industries"
+        android:textColor="#d50000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgTonyStark"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/tony_stark" />
+    <TextView
+        android:id="@+id/txtTonyStarkName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Tony Stark"
+        android:layout_above="@id/imgTonyStark"/>
+    <TextView
+        android:id="@+id/txtTonyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#3f51b5"
+        android:text="tony@starkindustries.com"
+        android:layout_below="@id/txtStarkIndName"/>
+    <TextView
+        android:id="@+id/txtTonyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textSize="15sp"
+        android:textColor="#009688"
+        android:text="+91 11 155555"
+        android:layout_below="@id/txtTonyEmail"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="enter email"
+        android:layout_margin="20dp"
+        android:paddingLeft="150dp"
+        android:inputType="textEmailAddress"
+        android:layout_above="@id/etPassword"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:hint="password"
+        android:paddingLeft="150dp"
+        android:inputType="textPassword"
+        android:layout_above="@id/btnLogin"/>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:hint="Subscribe/Login"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
